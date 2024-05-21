@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" 
+    content="width=device-width, initial-scale=1.0">
+    <title>타이머</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>
+            <span id="minutes">00</span>:<span id="seconds">00</span>:<span id="tenMillis">00</span>
+        </h1>
+        <div class="controls">
+            <input type="number" id="inputMinutes" placeholder="분" min="0">
+            <input type="number" id="inputSeconds" placeholder="초" min="0" max="59">
+            <input type="number" id="inputMillis" placeholder="미리초" min="0" max="99">
+        </div>
+        <button id="bt__start">START</button>
+        <button id="bt__stop">STOP</button>
+        <button id="bt__reset">RESET</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

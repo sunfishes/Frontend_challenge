@@ -1,0 +1,39 @@
+*{ box-sizing: border-box;}
+html, body{margin: 0; background-color: white;}
+
+.container{
+    width: 80%; min-width: 320px; max-width: 640px;
+    margin: 10px auto; padding: 5px 0 15px;
+    text-align: center; border: 1px solid black;
+    border-radius: 16px;
+}
+
+h1 > span{
+    display: inline-block;
+    width: 40px;
+}
+
+.controls {
+    margin-bottom: 20px;
+}
+
+.controls input {
+    font-size: 16px;
+    padding: 6px;
+    margin: 5px;
+    width: 60px;
+    text-align: center;
+}
+
+button{
+    color: black; background-color: lightgray;
+    font-size: 16px; padding: 6px;
+    width: 100px; border: none; border-radius: 3px;
+    cursor: pointer;
+}
+
+button:active{
+    color: lightgray;
+    background-color: black;
+    
+}
