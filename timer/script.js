@@ -36,7 +36,6 @@ buttonReset.onclick = function(){
     inputSeconds.value = "";
     inputMillis.value = "";
 }
-//10ms마다 시간에 대한 숫자가 증가한다.
 function operateTimer(){
     if (tenMillis > 0) {
         tenMillis--;
