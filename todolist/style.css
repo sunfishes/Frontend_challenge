@@ -1,0 +1,55 @@
+*{
+    box-sizing: border-box;
+}
+body {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    min-height: 100vh;
+}
+
+h1{
+    margin: 0;
+    margin-bottom: 12px;
+}
+.to-docontainer{
+    max-width: 400px;
+    width: 100%;
+    background-color: #FFE8AD;
+    text-align: center;
+    padding: 20px;
+}
+#inputField #inputTodo{
+    width: calc(100% - 45px);
+    border: 1px solid #eee;
+    border-radius: 4px;
+    padding: 10px;
+}
+#inputField #todoInput:focus{
+    outline: none;
+}
+#inputField #bt__add {
+    position: relative;
+    width: 35px;
+    height: 35px;
+    border: none;
+    background-color: #242423;
+    border-radius: 4px;
+    cursor: pointer;
+    vertical-align: middle;
+}
+#inputField #bt__add span{
+    display: block;
+    width: 2px;
+    height: 15px;
+    background-color: #FFE8AD;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+}
+#inputField #addBtn span:last-child{
+    transform: translate(-50%, -50%) rotate(-90deg);
+}
