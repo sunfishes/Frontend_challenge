@@ -1,0 +1,104 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.calendar-container {
+    width: 300px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+}
+
+.calendar-header button {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.days-of-week, .days {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.days-of-week div, .days div {
+    width: calc(100% / 7);
+    padding: 10px;
+    text-align: center;
+}
+
+.days div {
+    cursor: pointer;
+}
+
+.days div.memo {
+    position: relative;
+}
+
+.days div.memo::after {
+    content: '';
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    width: 6px;
+    height: 6px;
+    background-color: red;
+    border-radius: 50%;
+}
+
+.memo-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.memo-container h2 {
+    margin-bottom: 10px;
+}
+
+.memo-container textarea {
+    width: 100%;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+.memo-container button {
+    width: 48%;
+    padding: 10px;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.memo-container button:nth-child(2) {
+    background-color: #6c757d;
+}
