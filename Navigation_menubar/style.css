@@ -1,0 +1,58 @@
+body {
+    margin: 0;
+}
+
+#navBar {
+    background-color: #E1E7EA;
+}
+
+#navBar ul {
+    display: flex;
+    padding: 15px 10px;
+    margin: 0;
+    justify-content: center;
+}
+
+#navBar ul li{
+    list-style: none;
+    margin: 0 10px;
+}
+
+#navBar a{
+    color: #F8A78E;
+    padding: 14px 20px;
+}
+
+#navBar a:hover {
+    background-color: #f4eacc;
+    border-radius: 10px;
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+    padding: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    #navBar ul {
+        max-height: 0;
+        overflow: hidden;
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+    #navBar ul li {
+        text-align: center;
+        padding: 10px;
+    }
+    .hamburger {
+        display: block;
+        max-width: 30px;
+        justify-content: right;
+    }
+    #navBar.active ul {
+        max-height: 400px;
+        display: flex;
+    }
+}

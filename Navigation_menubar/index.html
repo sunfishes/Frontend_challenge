@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navgation_menu</title>
+    <link rel = "stylesheet" href="style.css">
+</head>
+<body>
+    <div id="navBar">
+        <div onclick="toggleMenu()">
+        <img src="./menu.png" alt="" class="hamburger">
+        </div>
+    <ul class="navbar-menu">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">FAQ</a></li>
+    </ul>
+</div>
+<script>
+    function toggleMenu() {
+        var navBar = document.getElementById("navBar");
+        navBar.classList.toggle("active");
+    }
+</script>
+</body>
+</html>
